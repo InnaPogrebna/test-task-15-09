@@ -1,3 +1,17 @@
-.starter {
-  font-size: 18px;
-}
+@import '../src/style/utils/extends';
+@import '../src/style/utils/_vars';
+@import '../src/style/utils/mixins';
+
+@import '../src/style/block/navbar';
+@import '../src/style/block/reset';
+@import '../src/style/block/page';
+@import '../src/style/block/header';
+@import '../src/style/block/container';
+@import '../src/style/block/navigation';
+@import '../src/style/block/dropdown';
+@import '../src/style/block/blockStart';
+@import '../src/style/block/posts';
+@import '../src/style/block/footer';
+@import '../src/style/block/title';
+@import '../src/style/block/article';
+
