@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.f175fc66.chunk.css",
-    "main.js": "./static/js/main.663d8bab.chunk.js",
-    "main.js.map": "./static/js/main.663d8bab.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.8c9895b1.js",
-    "runtime-main.js.map": "./static/js/runtime-main.8c9895b1.js.map",
-    "static/js/2.829079b4.chunk.js": "./static/js/2.829079b4.chunk.js",
-    "static/js/2.829079b4.chunk.js.map": "./static/js/2.829079b4.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.f175fc66.chunk.css.map": "./static/css/main.f175fc66.chunk.css.map",
-    "static/js/2.829079b4.chunk.js.LICENSE.txt": "./static/js/2.829079b4.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "./static/media/subtract.d86ae2c3.svg",
-    "static/media/f.9fd529b2.svg": "./static/media/f.9fd529b2.svg",
-    "static/media/insta.2d5585e9.svg": "./static/media/insta.2d5585e9.svg",
-    "static/media/logo.fd18db65.png": "./static/media/logo.fd18db65.png",
-    "static/media/tw.ca09d432.svg": "./static/media/tw.ca09d432.svg"
+    "main.css": "/test-task-15-09/static/css/main.4695fda0.chunk.css",
+    "main.js": "/test-task-15-09/static/js/main.713c2c84.chunk.js",
+    "main.js.map": "/test-task-15-09/static/js/main.713c2c84.chunk.js.map",
+    "runtime-main.js": "/test-task-15-09/static/js/runtime-main.6023b400.js",
+    "runtime-main.js.map": "/test-task-15-09/static/js/runtime-main.6023b400.js.map",
+    "static/js/2.829079b4.chunk.js": "/test-task-15-09/static/js/2.829079b4.chunk.js",
+    "static/js/2.829079b4.chunk.js.map": "/test-task-15-09/static/js/2.829079b4.chunk.js.map",
+    "index.html": "/test-task-15-09/index.html",
+    "static/css/main.4695fda0.chunk.css.map": "/test-task-15-09/static/css/main.4695fda0.chunk.css.map",
+    "static/js/2.829079b4.chunk.js.LICENSE.txt": "/test-task-15-09/static/js/2.829079b4.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/test-task-15-09/static/media/subtract.d86ae2c3.svg",
+    "static/media/f.9fd529b2.svg": "/test-task-15-09/static/media/f.9fd529b2.svg",
+    "static/media/insta.2d5585e9.svg": "/test-task-15-09/static/media/insta.2d5585e9.svg",
+    "static/media/logo.fd18db65.png": "/test-task-15-09/static/media/logo.fd18db65.png",
+    "static/media/tw.ca09d432.svg": "/test-task-15-09/static/media/tw.ca09d432.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c9895b1.js",
+    "static/js/runtime-main.6023b400.js",
     "static/js/2.829079b4.chunk.js",
-    "static/css/main.f175fc66.chunk.css",
-    "static/js/main.663d8bab.chunk.js"
+    "static/css/main.4695fda0.chunk.css",
+    "static/js/main.713c2c84.chunk.js"
   ]
 }
