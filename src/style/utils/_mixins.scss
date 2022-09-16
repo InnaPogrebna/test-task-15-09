@@ -1,0 +1,24 @@
+@mixin hover($_property, $_toValue) {
+  transition: #{$_property} 0.4s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin onDesktop1440px {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin onDesktop1024px {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktop640px {
+  @media (min-width: 640px) {
+    @content;
+  }
+}

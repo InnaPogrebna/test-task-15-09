@@ -1,0 +1,52 @@
+.dropdown {
+  position: relative;
+  z-index: 2;
+
+  &__content {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/burger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  &__popover {
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    right: 10px;
+    transform: translateX(140%);
+    animation: move 0.5s ease forwards;
+  }
+
+  &__list {
+    position: relative;
+    width: 300px;
+    background-color: $colorGray;
+    box-shadow: 0 1px 2px 0 rgba(64, 80, 108, 0.2), 0 0 24px -1px rgba(64, 80, 108, 0.2);
+    border-radius: 8px;
+
+    &-item {
+      text-transform: uppercase;
+      color: $colorWhite;
+      text-align: center;
+      padding: 20px;
+
+      @include hover(transform, translateY(-5px));
+    }
+  }
+}
+
+
+@keyframes move {
+  0% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

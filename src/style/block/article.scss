@@ -1,0 +1,44 @@
+.article {
+  &__text {
+    @extend %OpenSans-Regular;
+    font-size: 14px;
+    line-height: 21px;
+    color: $colorGrayLight;
+  }
+
+  &__button {
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: $colorBlue;
+    color: $colorWhite;
+    @extend %OpenSans-Bold;
+    font-size: 15px;
+    line-height: 150.68%;
+    padding: 10px 20px;
+    cursor: pointer;
+    @include hover(background-color, $colorWhite);
+    @include hover(color, $colorBlue);
+    @include hover(outline, 2px solid $colorBlue);
+
+    @include onDesktop640px {
+      margin-top: 25px;
+      font-size: 20px;
+      line-height: 150.68%;
+      padding: 10px 24px;
+    }
+
+    &:active {
+      animation: click 0.3s ease;
+    }
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}

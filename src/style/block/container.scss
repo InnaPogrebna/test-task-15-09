@@ -1,0 +1,15 @@
+.container {
+  padding: 25px 20px;
+
+  @include onDesktop640px {
+    padding: 20px;
+  }
+
+  @include onDesktop1024px {
+    padding: 25px 80px;
+  }
+
+  @include onDesktop1440px {
+    padding: 34px 135px;
+  }
+}

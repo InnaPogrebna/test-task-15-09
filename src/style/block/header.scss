@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__block {
+    background-image: url("../../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: max-content;
+    transform: translateY(-100%);
+    animation: background 0.5s ease forwards;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 20px;
+
+    @include onDesktop640px {
+      width: 150px;
+      height: 25px;
+    }
+
+    @include onDesktop1440px {
+      width: 184px;
+      height: 37px;
+    }
+
+    &-img {
+      width: 100px;
+      height: 20px;
+      transform: translateX(-80px);
+      opacity: 0;
+      animation: transformLogo 0.5s ease forwards 1s;
+
+      @include onDesktop640px {
+        width: 150px;
+        height: 25px;
+      }
+      @include onDesktop1440px {
+        width: 184px;
+        height: 37px;
+      }
+    }
+  }
+}
+
+@keyframes transformLogo {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes background {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

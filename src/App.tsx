@@ -10,9 +10,6 @@ export const App: React.FC = () => {
   return (
     <div className="page">
       <nav className="navbar">
-        {/* <Link className="navbar-item" to="/home">
-          Back
-        </Link> */}
         <Link className="navbar-item" to="/page1">
           Page1
         </Link>

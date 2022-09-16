@@ -1,0 +1,28 @@
+.title {
+  width: 100%;
+
+  &__text {
+    @extend %OpenSans-Bold;
+    font-size: 20px;
+    line-height: 30px;
+    width: 300px;
+    color: $colorWhite;
+    padding: 60px 0;
+    text-align: center;
+    margin: auto;
+
+    @include onDesktop640px {
+      font-size: 25px;
+      width: 400px;
+      line-height: 40px;
+    }
+
+    @include onDesktop1024px {
+      font-size: 38px;
+      line-height: 52px;
+      padding-top: 147px;
+      padding-bottom: 160px;
+      width: 700px;
+    }
+  }
+}

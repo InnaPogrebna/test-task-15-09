@@ -1,0 +1,26 @@
+.footer {
+  width: 100vw;
+  height: 63px;
+  background-color: $colorFooter;
+  padding-top: 22px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      @extend %WorkSans-Regular;
+      font-size: 16px;
+      color: $colorWhite;
+    }
+
+    &-socials {
+      display: flex;
+      gap: 15px;
+
+      &-icon {
+        @include hover(transform, scale(1.2));
+      }
+    }
+  }
+}

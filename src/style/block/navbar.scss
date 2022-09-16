@@ -1,0 +1,13 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  &-item {
+    @extend %OpenSans-Bold;
+    padding: 5px 0;
+    font-size: 25px;
+    color: $colorBlue;
+  }
+}
