@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Route, Routes
-} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import { HomePage } from './pages/HomePage';
 import { Page1 } from './pages/Page1';
