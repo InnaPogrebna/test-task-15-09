@@ -17,7 +17,7 @@ export const Page1: React.FC = () => {
         <BlockStart />
       </section>
       <section className="posts container posts__wrapper">
-        <Posts posts={posts} />
+        <Posts posts={posts} openCart />
       </section>
       <section className="footer container">
         <Footer />

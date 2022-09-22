@@ -1,4 +1,15 @@
 .navigation {
+  @media only screen and (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $colorBlue;
+    transition: all 1s ease;
+    z-index: 3;
+  }
+
   &__list {
     display: flex;
     gap: 20px;
@@ -7,20 +18,34 @@
     animation: transformNav 0.5s forwards 1.4s;
     opacity: 0;
 
-    @include onDesktop1440px {
+    @media only screen and (max-width: 1440px) {
       gap: 25px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
+      transform: none;
     }
 
     &-item {
       color: $colorWhite;
       text-transform: uppercase;
-      font-size: 10px;
+      font-size: 20px;
       position: relative;
       z-index: 5;
 
-      @include onDesktop1440px {
+      @media only screen and (max-width: 1440px) {
         font-size: 15px;
       }
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 10px;
+      }
+
       &:hover:after {
         content: "";
         position: absolute;
@@ -30,6 +55,45 @@
         width: 100%;
         background-color: $colorWhite;
       }
+    }
+  }
+
+  &__responsive {
+    transform: translateX(0);
+
+    &-hide {
+      transform: none;
+
+      @media only screen and (max-width: 1024px) {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  &__button {
+    background-image: url("../../img/burger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+    cursor: pointer;
+    display: none;
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+
+    &-close {
+      background-image: url("../../img/close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      transition: all 2s ease;
     }
   }
 }

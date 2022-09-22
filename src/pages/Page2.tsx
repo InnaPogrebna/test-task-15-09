@@ -6,7 +6,7 @@ import { Header } from '../components/Header';
 import { Title } from '../components/Title';
 import { BlockArticle } from '../components/BlockArticle';
 import { Footer } from '../components/Footer';
-import { PostsPage2 } from '../components/PostsPage2';
+import { Posts } from '../components/Posts';
 
 export const Page2: React.FC = () => {
   const [posts] = useState<Post[]>(data);
@@ -19,7 +19,7 @@ export const Page2: React.FC = () => {
       </section>
       <section className="posts container">
         <BlockArticle />
-        <PostsPage2 posts={posts} />
+        <Posts posts={posts} openCart={false} />
       </section>
       <section className="footer container">
         <Footer />

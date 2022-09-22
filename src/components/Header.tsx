@@ -1,17 +1,52 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useState } from 'react';
 import logo from '../img/logo.png';
-import { Navigation } from './Navigation';
-import { DropDownNavigation } from './DropDownNavigation';
 
 export const Header: React.FC = () => {
-  const screenWidth = window.innerWidth;
+  const [hide, setHide] = useState(true);
+
+  const showNavBar = () => {
+    setHide(!hide);
+  };
 
   return (
-    <div className="header">
+    <header className="header">
       <a href="/" className="header__logo">
         <img src={logo} className="header__logo-img" alt="logo" />
       </a>
-      {screenWidth <= 640 ? <DropDownNavigation /> : <Navigation /> }
-    </div>
+      <nav
+        className={`navigation ${hide ? 'navigation__responsive-hide' : 'navigation__responsive'}`}
+      >
+        <ul className="navigation__list">
+          <li className="navigation__list-item">
+            <a href="/">
+              <span>What we do</span>
+            </a>
+          </li>
+          <li className="navigation__list-item">
+            <a href="/">
+              <span>Our work</span>
+            </a>
+          </li>
+          <li className="navigation__list-item">
+            <a href="/">
+              <span>Seo insights</span>
+            </a>
+          </li>
+          <li className="navigation__list-item">
+            <a href="/">
+              <span>About us</span>
+            </a>
+          </li>
+        </ul>
+        <input
+          type="button"
+          // className="navigation__button-close"
+          className={!hide ? 'navigation__button-close' : ' '}
+          onClick={showNavBar}
+        />
+      </nav>
+      <input type="button" className="navigation__button" onClick={showNavBar} />
+    </header>
   );
 };

@@ -2,6 +2,7 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 120px;
+  position: relative;
 
   @include onDesktop1024px {
     padding-top: 83px;
@@ -10,15 +11,21 @@
 
   &__wrapper {
     position: relative;
-    height: 80px;
+    margin: auto;
+    background-image: url("../../img/subtract.svg");
+    width: 668px;
+    height: 172px;
+    opacity: 0;
+    animation: opacityBlock 0.5s ease forwards 2s;
 
-    @include onDesktop1024px {
-      margin: auto;
-      background-image: url("../../img/subtract.svg");
-      width: 667px;
-      height: 172px;
-      opacity: 0;
-      animation: opacityBlock 0.5s ease forwards 2s;
+    @media only screen and (max-width: 1024px) {
+      height: 80px;
+      background-image: none;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -48,7 +55,7 @@
     }
 
     &-article {
-      width: 300px;
+      width: 461.68px;
       @extend %OpenSans-Regular;
       font-size: 16px;
       color: $colorWhite;
@@ -56,27 +63,27 @@
       padding-top: 25px;
       opacity: 0.8;
 
-      @include onDesktop1024px {
-        width: 461.68px;
+      @media only screen and (max-width: 1024px) {
+        width: 300px;
         padding-top: 31px;
       }
     }
 
     &-button {
-      margin-top: 25px;
+      margin-top: 31px;
       @extend %OpenSans-Bold;
       color: $colorWhite;
-      font-size: 15px;
+      font-size: 20px;
       line-height: 150.68%;
       background-color: $colorRed;
       padding: 8px 28px;
+      padding: 10px 32px;
       cursor: pointer;
       transition: all 0.3s ease;
 
-      @include onDesktop1024px {
-        margin-top: 31px;
-        font-size: 20px;
-        padding: 10px 32px;
+      @media only screen and (max-width: 1024px) {
+        font-size: 15px;
+        padding: 8px 28px;
       }
 
       @include hover(color, $colorRed);

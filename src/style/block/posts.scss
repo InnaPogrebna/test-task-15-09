@@ -43,6 +43,7 @@
       width: 600px;
       gap: 40px;
       margin: auto;
+      margin-top: 30px;
     }
 
     @include onDesktop1440px {
@@ -67,10 +68,6 @@
       &--open {
         height: max-content;
         position: relative;
-      }
-
-      &--close {
-        height: 380px;
       }
 
       &-img {
