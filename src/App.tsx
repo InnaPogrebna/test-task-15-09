@@ -10,7 +10,7 @@ export const App: React.FC = () => {
   return (
     <div className="page">
       <nav className="navbar">
-        <Link className="navbar-item" to="/test-task-15-09/">
+        <Link className="navbar-item" to="/test-task-15-09">
           Home
         </Link>
         <Link className="navbar-item" to="/test-task-15-09/page1">
@@ -21,8 +21,8 @@ export const App: React.FC = () => {
         </Link>
       </nav>
       <Routes>
-        <Route path="page2" element={<Page2 />} />
-        <Route path="page1" element={<Page1 />} />
+        <Route path="test-task-15-09/page1" element={<Page2 />} />
+        <Route path="test-task-15-09/page2" element={<Page1 />} />
       </Routes>
     </div>
   );
