@@ -21,8 +21,9 @@ export const App: React.FC = () => {
         </Link>
       </nav>
       <Routes>
-        <Route path="test-task-15-09/page1" element={<Page2 />} />
-        <Route path="test-task-15-09/page2" element={<Page1 />} />
+        <Route path="/test-task-15-09/page1" element={<Page2 />} />
+        <Route path="/test-task-15-09/page2" element={<Page1 />} />
+        <Route path="*" element={<p>ERROR</p>} />
       </Routes>
     </div>
   );
