@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "img": "./test-task-15-09/img/image-1.png",
+    "img": "./img/image-1.png",
     "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
     "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium"
   },
   {
     "id": 2,
-    "img": "./test-task-15-09/img/image-2.png",
+    "img": "./img/image-2.png",
     "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
     "body": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium"
   },
   {
     "id": 3,
-    "img": "./test-task-15-09/img/image-3.png",
+    "img": "./img/image-3.png",
     "title": "Kym Marsh, 42, becomes a grandmother for the first time as daughter Emilie Mae",
     "body": "atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate"
   },
   {
     "id": 4,
-    "img": "./test-task-15-09/img/image-4.png",
+    "img": "./img/image-4.png",
     "title": "Coronation Street star Sam Aston, 25, is set to get married this weekend as fiancée",
     "body": "molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt"
   }

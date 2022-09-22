@@ -6,12 +6,14 @@ import { Header } from '../components/Header';
 import { BlockStart } from '../components/BlockStart';
 import { Posts } from '../components/Posts';
 import { Footer } from '../components/Footer';
+import { HomePage } from './HomePage';
 
 export const Page1: React.FC = () => {
   const [posts] = useState<Post[]>(data);
 
   return (
     <div className="page">
+      <HomePage />
       <section className="header__block container">
         <Header />
         <BlockStart />
